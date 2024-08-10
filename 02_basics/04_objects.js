@@ -29,17 +29,39 @@ const obj4 = {7:"g", 8:"h"}
 const obj = {...obj1,...obj2,...obj3}
 // console.log(obj);
 
-console.log(tinderUser);
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(tinderUser);
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));
-console.log(tinderUser.hasOwnProperty('isLoggedin'));
-
-
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+// console.log(tinderUser.hasOwnProperty('isLoggedin'));
 
 
+const course = {
+    courseName : "Js in hindi",
+    price : "999",
+    courseInstructor : "Hitesh"
+}
+// course.courseInstructor
+
+const {courseInstructor : instructor} = course
+// console.log(courseInstructor);
+console.log(instructor);
+
+//JSON - JavaScript Object Notation
+
+// {
+//     "name" : "amita",
+//     "courseName" : "js in hindi",
+//     "price" : "free"
+// }
+
+[
+    {},
+    {},
+    {}
+]
 
 
 
