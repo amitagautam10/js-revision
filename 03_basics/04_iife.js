@@ -14,7 +14,7 @@
 
 
 ((name)=>{
-     // unnamed iife 
+     // iife 
     console.log(`DB Connected Two ${name}`);
     
 })('amita')
