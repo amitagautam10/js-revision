@@ -55,4 +55,25 @@ promise4
 )
 
 
-const promise5 = new Promise(func)
+const promise5 = new Promise(function(resolve, reject){
+    setTimeout(function(){
+        let error = true
+        if(!error){
+            resolve({username: "javascript", password:"123"})
+        }
+        else{
+            reject("ERROR: JS went wrong")
+        }
+    }, 1000)
+})
+
+async function consumePromise5(){
+    try{
+        const response = await promise5
+    console.log(response);
+    }catch(error){
+        console.log(error);
+        
+    }
+}
+consumePromise5()
